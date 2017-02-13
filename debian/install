@@ -1,3 +1,4 @@
 ogn-rf usr/bin
+x64-bin/ogn-decode usr/bin
 gsm_scan usr/bin
 etc/rtlsdr-ogn.conf
