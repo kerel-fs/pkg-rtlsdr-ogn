@@ -1,2 +1,3 @@
 ogn-rf usr/bin
 gsm_scan usr/bin
+etc/rtlsdr-ogn.conf
