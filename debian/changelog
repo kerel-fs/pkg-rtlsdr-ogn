@@ -1,5 +1,5 @@
-rtlsdr-ogn (0.2.5-1) unstable; urgency=low
+rtlsdr-ogn (0.2.6~git547e6aa-1) unstable; urgency=low
 
   * Initial release.
 
- -- Fabian P. Schmidt <kerel-fs@gmx.de>  Sun, 12 Feb 2017 20:44:00 +0100
+ -- Fabian P. Schmidt <kerel-fs@gmx.de>  Thu, 16 Feb 2017 20:33:16 +0100
