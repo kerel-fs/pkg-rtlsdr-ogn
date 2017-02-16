@@ -2,4 +2,14 @@
 export DH_VERBOSE = 1
 
 %:
-	dh $@
+	dh $@ --with systemd
+
+override_dh_installinit:
+	dh_systemd_enable --package rtlsdr-ogn --name=ogn-rf.service ogn-rf.service
+	dh_systemd_enable --package rtlsdr-ogn --name=ogn-decode.service ogn-decode.service
+	dh_systemd_enable --package rtlsdr-ogn --name=ogn-decode.socket ogn-decode.socket
+	dh_installinit --package rtlsdr-ogn --no-start --noscripts
+
+override_dh_systemd_start:
+	dh_systemd_start --package rtlsdr-ogn ogn-rf.service
+	dh_systemd_start --package rtlsdr-ogn ogn-decode.service

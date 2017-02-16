@@ -2,13 +2,13 @@ Source: rtlsdr-ogn
 Section: misc
 Priority: optional
 Maintainer: Fabian P. Schmidt <kerel-fs@gmx.de>
-Build-Depends: debhelper (>= 9), libusb-1.0-0-dev, librtlsdr-dev, libconfig-dev, libfftw3-dev, libjpeg-dev
+Build-Depends: debhelper (>= 9), dh-systemd, libusb-1.0-0-dev, librtlsdr-dev, libconfig-dev, libfftw3-dev, libjpeg-dev
 Standards-Version: 3.9.6
 Homepage: http://glidernet.org
 
 Package: rtlsdr-ogn
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, librtlsdr0
+Depends: ${shlibs:Depends}, ${misc:Depends}, librtlsdr0, adduser
 Description: Open Glider Network receiver for rtl-sdr
  rtlsdr-ogn is a software defined radio receiver (SDR) software for the
  Open Glider Network, based on the famous rtl-sdr radio receiver tools.
