@@ -1,0 +1,4 @@
+0001-Move-sources-files-into-.-src-directory.patch
+0002-Move-version-string-from-Makefile-to-VERSION.txt.patch
+0003-Improve-Makefile.patch
+0004-Makefile-Add-all-to-phony-targets.patch

@@ -1,0 +1,31 @@
+From 7d312aea282cda580c4a9b98d6ff8c9ac93ca844 Mon Sep 17 00:00:00 2001
+From: "Fabian P. Schmidt" <kerel-fs@gmx.de>
+Date: Thu, 9 Feb 2017 23:01:53 +0100
+Subject: [PATCH 2/4] Move version string from Makefile to VERSION.txt
+
+---
+ Makefile    | 2 +-
+ VERSION.txt | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 VERSION.txt
+
+diff --git a/Makefile b/Makefile
+index 9431e3f..edd29b4 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,4 +1,4 @@
+-VERSION = 0.2.6
++VERSION = $(shell cat VERSION.txt)
+ 
+ # USE_RPI_GPU_FFT = 1
+ 
+diff --git a/VERSION.txt b/VERSION.txt
+new file mode 100644
+index 0000000..53a75d6
+--- /dev/null
++++ b/VERSION.txt
+@@ -0,0 +1 @@
++0.2.6
+-- 
+2.1.4
+
