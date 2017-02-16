@@ -1,0 +1,39 @@
+From 09cc5b1fa1186b2f185cea54c47312f2595633e3 Mon Sep 17 00:00:00 2001
+From: "Fabian P. Schmidt" <kerel-fs@gmx.de>
+Date: Fri, 10 Feb 2017 02:08:22 +0100
+Subject: [PATCH] ogn-rf: Detect if stdin is a terminal
+
+Fixes #11: Version 0.2.5 crashs with SEGV if invoked by systemd.
+---
+ src/ogn-rf.cc | 15 +++++++++++----
+ 1 file changed, 11 insertions(+), 4 deletions(-)
+
+diff --git a/src/ogn-rf.cc b/src/ogn-rf.cc
+index c9baead..5147a09 100644
+--- a/src/ogn-rf.cc
++++ b/src/ogn-rf.cc
+@@ -1055,10 +1055,17 @@ int main(int argc, char *argv[])
+   GSM.Start();
+   RF.Start();
+ 
+-  char Cmd[128];
+-  while(!RF.StopReq)
+-  { if(fgets(Cmd, 128, stdin)==0) break;
+-    UserCommand(Cmd); }
++  if (isatty(fileno(stdin))) {
++    char Cmd[128];
++    while(!RF.StopReq) {
++      if(fgets(Cmd, 128, stdin)==0) break;
++      UserCommand(Cmd);
++    }
++  } else {
++    while(!RF.StopReq) {
++      sleep(1);
++    }
++  }
+ 
+   sleep(4);
+   RF.Stop();
+-- 
+2.1.4
+
