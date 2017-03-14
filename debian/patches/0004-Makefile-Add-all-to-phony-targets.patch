@@ -1,4 +1,4 @@
-From 44357af3c802dacf865e567557d5928297da63c1 Mon Sep 17 00:00:00 2001
+From e53ef6f963bb2fd32d993a13067122fc8fdc7f15 Mon Sep 17 00:00:00 2001
 From: "Fabian P. Schmidt" <kerel-fs@gmx.de>
 Date: Sun, 12 Feb 2017 18:03:14 +0100
 Subject: [PATCH 4/4] Makefile: Add all to phony targets

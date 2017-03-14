@@ -1,4 +1,4 @@
-From 4535a4e7ac63cc9429ff612a8d3cf880e2d1adce Mon Sep 17 00:00:00 2001
+From 1580e4c916c0b28b5ce9672b0d510f394494f983 Mon Sep 17 00:00:00 2001
 From: "Fabian P. Schmidt" <kerel-fs@gmx.de>
 Date: Thu, 9 Feb 2017 22:23:07 +0100
 Subject: [PATCH 3/4] Improve Makefile

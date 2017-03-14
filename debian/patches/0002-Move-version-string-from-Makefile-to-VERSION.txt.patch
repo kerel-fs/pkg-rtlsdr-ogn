@@ -1,4 +1,4 @@
-From 7d312aea282cda580c4a9b98d6ff8c9ac93ca844 Mon Sep 17 00:00:00 2001
+From a8b74f697b3f601f0b40329c8657c7ee75fa0aed Mon Sep 17 00:00:00 2001
 From: "Fabian P. Schmidt" <kerel-fs@gmx.de>
 Date: Thu, 9 Feb 2017 23:01:53 +0100
 Subject: [PATCH 2/4] Move version string from Makefile to VERSION.txt
