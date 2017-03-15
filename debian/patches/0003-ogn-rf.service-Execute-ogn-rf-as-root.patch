@@ -1,0 +1,27 @@
+From 04e0b051e83a3f3b5c69fc47b3be2ef36eea6708 Mon Sep 17 00:00:00 2001
+From: "Fabian P. Schmidt" <kerel-fs@gmx.de>
+Date: Wed, 15 Mar 2017 14:07:05 +0100
+Subject: [PATCH 3/3] ogn-rf.service: Execute ogn-rf as root
+
+The gpu support on the raspberry pi requires access to /dev/vcio and
+/dev/kmem, thus ogn-rf needs to be run as root.
+---
+ scripts/ogn-rf.service | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/scripts/ogn-rf.service b/scripts/ogn-rf.service
+index 5066056..2737f62 100644
+--- a/scripts/ogn-rf.service
++++ b/scripts/ogn-rf.service
+@@ -3,7 +3,7 @@ Description=Receive ogn/flarm data and write the raw data to a fifo
+ After=network.target time-sync.target
+ 
+ [Service]
+-User=ogn
++User=root
+ ExecStart=/usr/bin/ogn-rf /etc/rtlsdr-ogn.conf
+ Restart=on-failure
+ 
+-- 
+2.1.4
+

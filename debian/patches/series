@@ -5,5 +5,7 @@
 0005-Add-missing-file-gpu_fft_base.c.patch
 0006-Makefile-Fix-target-RPI_GPU.patch
 0001-Add-systemd-units-for-ogn-decode-and-ogn-rf.patch
+0002-ogn-decode.service-Set-StandardInput-to-tty.patch
+0003-ogn-rf.service-Execute-ogn-rf-as-root.patch
 0001-Add-rtlsdr-ogn.conf-conffile.patch
 0001-ogn-rf-Detect-if-stdin-is-a-terminal.patch
