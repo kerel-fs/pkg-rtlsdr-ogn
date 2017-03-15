@@ -2,6 +2,8 @@
 0002-Move-version-string-from-Makefile-to-VERSION.txt.patch
 0003-Improve-Makefile.patch
 0004-Makefile-Add-all-to-phony-targets.patch
+0005-Add-missing-file-gpu_fft_base.c.patch
+0006-Makefile-Fix-target-RPI_GPU.patch
 0001-Add-systemd-units-for-ogn-decode-and-ogn-rf.patch
 0001-Add-rtlsdr-ogn.conf-conffile.patch
 0001-ogn-rf-Detect-if-stdin-is-a-terminal.patch

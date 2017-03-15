@@ -1,0 +1,27 @@
+From a9ee51404be1547e137b9d0732117a0d71511b18 Mon Sep 17 00:00:00 2001
+From: "Fabian P. Schmidt" <kerel-fs@gmx.de>
+Date: Wed, 15 Mar 2017 09:52:53 +0100
+Subject: [PATCH 6/6] Makefile: Fix target RPI_GPU
+
+---
+ Makefile | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 68608f9..1cbcea5 100644
+--- a/Makefile
++++ b/Makefile
+@@ -15,8 +15,9 @@ FLAGS += -mcpu=arm1176jzf-s -mtune=arm1176jzf-s -march=armv6zk -mfpu=vfp
+ endif
+ 
+ ifdef USE_RPI_GPU_FFT
++LDLIBS += -ldl
+ GPU_FLAGS = -DUSE_RPI_GPU_FFT
+-GPU_SRC   = src/mailbox.c src/gpu_fft.c src/gpu_fft_twiddles.c src/gpu_fft_shaders.c
++GPU_SRC   = src/mailbox.c src/gpu_fft.c src/gpu_fft_base.c src/gpu_fft_twiddles.c src/gpu_fft_shaders.c
+ endif
+ 
+ #####
+-- 
+2.1.4
+

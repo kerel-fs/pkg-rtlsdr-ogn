@@ -1,7 +1,7 @@
 From 54a07c768693aabde2e9553dfc4f82de038c80e6 Mon Sep 17 00:00:00 2001
 From: "Fabian P. Schmidt" <kerel-fs@gmx.de>
 Date: Wed, 11 Jan 2017 22:42:37 +0100
-Subject: [PATCH 1/4] Move sources files into ./src/ directory
+Subject: [PATCH 1/6] Move sources files into ./src/ directory
 
 ---
  alloc.h                  |   28 -
