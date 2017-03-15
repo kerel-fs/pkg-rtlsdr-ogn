@@ -1,41 +1,44 @@
-From d0b2ab2308642e1082f2f0cac4be570c97c87d9a Mon Sep 17 00:00:00 2001
+From b26c96da91308e923a5147c5c869ca06bb49b604 Mon Sep 17 00:00:00 2001
 From: "Fabian P. Schmidt" <kerel-fs@gmx.de>
 Date: Mon, 13 Feb 2017 18:02:32 +0100
 Subject: [PATCH] Add rtlsdr-ogn.conf conffile
 
 ---
- etc/rtlsdr-ogn.conf | 22 ++++++++++++++++++++++
- 1 file changed, 22 insertions(+)
+ etc/rtlsdr-ogn.conf | 25 +++++++++++++++++++++++++
+ 1 file changed, 25 insertions(+)
  create mode 100644 etc/rtlsdr-ogn.conf
 
 diff --git a/etc/rtlsdr-ogn.conf b/etc/rtlsdr-ogn.conf
 new file mode 100644
-index 0000000..7151397
+index 0000000..57c2d76
 --- /dev/null
 +++ b/etc/rtlsdr-ogn.conf
-@@ -0,0 +1,22 @@
-+
+@@ -0,0 +1,25 @@
 +RF:
-+{ 
++{
 +  FreqCorr = +50;          # [ppm]      "big" R820T sticks have 40-80ppm correction factors, measure it with gsm_scan
 +
 +  GSM:                     # for frequency calibration based on GSM signals
 +  { CenterFreq  = 938.4;   # [MHz] find the best GSM frequency with gsm_scan
 +    Gain        =  25.0;   # [dB]  RF input gain (beware that GSM signals are very strong !)
 +  } ;
-+} ;
++
++  PipeName = "/var/run/ogn-decode.fifo";
++};
 +
 +Position:
-+{ Latitude   =   +48.0000; # [deg] Antenna coordinates
++{
++  Latitude   =   +48.0000; # [deg] Antenna coordinates
 +  Longitude  =    +9.0000; # [deg]
 +  Altitude   =        100; # [m]   Altitude above sea leavel
 +  GeoidSepar =         48; # [m]   Geoid separation: FLARM transmits GPS altitude, APRS uses means Sea level altitude
-+} ;
++};
 +
 +APRS:
-+{ Call = "SampleAPRSnameToChange";     # APRS callsign (max. 9 characters)
++{
++  Call = "SampleAPRSnameToChange";     # APRS callsign (max. 9 characters)
 +                                       # Please refer to http://wiki.glidernet.org/receiver-naming-convention
-+} ;
++};
 -- 
 2.1.4
 
