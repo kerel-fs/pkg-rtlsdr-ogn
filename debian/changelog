@@ -1,3 +1,9 @@
+rtlsdr-ogn (0.2.6~git547e6aa-3) unstable; urgency=medium
+
+  * Fix example configuration file (updated patch from PR #26).
+
+ -- Fabian P. Schmidt <kerel-fs@gmx.de>  Wed, 15 Mar 2017 22:30:47 +0100
+
 rtlsdr-ogn (0.2.6~git547e6aa-2) unstable; urgency=medium
 
   * Fix systemd units for ogn-decode and ogn-rf on x64 and rpi
