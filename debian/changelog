@@ -1,3 +1,12 @@
+rtlsdr-ogn (0.2.6~git547e6aa-2) unstable; urgency=medium
+
+  * Fix systemd units for ogn-decode and ogn-rf on x64 and rpi
+    (updated patch from PR #25).
+  * Fix target RPI_GPU (updated patch from PR #22).
+  * Add support for armv7l architecture (Raspberry Pi).
+
+ -- Fabian P. Schmidt <kerel-fs@gmx.de>  Wed, 15 Mar 2017 14:28:08 +0100
+
 rtlsdr-ogn (0.2.6~git547e6aa-1) unstable; urgency=low
 
   * Initial release.
