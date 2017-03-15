@@ -7,7 +7,7 @@ Standards-Version: 3.9.6
 Homepage: http://glidernet.org
 
 Package: rtlsdr-ogn
-Architecture: amd64
+Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, librtlsdr0, adduser
 Description: Open Glider Network receiver for rtl-sdr
  rtlsdr-ogn is a software defined radio receiver (SDR) software for the
