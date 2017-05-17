@@ -1,7 +1,6 @@
-From ee4e7ce325556925f3ddff8faeab273c1513bbb2 Mon Sep 17 00:00:00 2001
 From: "Fabian P. Schmidt" <kerel-fs@gmx.de>
 Date: Sun, 19 Feb 2017 23:43:34 +0100
-Subject: [PATCH 2/3] ogn-decode.service: Set StandardInput to tty
+Subject: ogn-decode.service: Set StandardInput to tty
 
 This is a workaround for #11: Version 0.2.5 crashs with SEGV if invoked by systemd,
 since ogn-decode exits when it gets an EOF via stdin.
@@ -26,6 +25,3 @@ index f2374e3..cc0448b 100644
  User=ogn
  ExecStart=/usr/bin/ogn-decode /etc/rtlsdr-ogn.conf
  Restart=on-failure
--- 
-2.1.4
-

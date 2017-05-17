@@ -1,7 +1,6 @@
-From 7836684639a9225ded6abb6215f24888826b46fe Mon Sep 17 00:00:00 2001
 From: "Fabian P. Schmidt" <kerel-fs@gmx.de>
 Date: Wed, 15 Mar 2017 09:21:36 +0100
-Subject: [PATCH 5/6] Add missing file gpu_fft_base.c
+Subject: Add missing file gpu_fft_base.c
 
 Source: http://www.aholme.co.uk/GPU_FFT/Main.htm
 Fixes #27.
@@ -206,6 +205,3 @@ index 0000000..76656b8
 +    ptr->arm.bptr += bytes;
 +    return vc;
 +}
--- 
-2.1.4
-

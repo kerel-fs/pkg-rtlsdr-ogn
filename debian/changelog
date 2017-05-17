@@ -1,3 +1,9 @@
+rtlsdr-ogn (0.2.6~git547e6aa-4) UNRELEASED; urgency=medium
+
+  * Use git-quiltimport for patch management.
+
+ -- Fabian P. Schmidt <kerel-fs@gmx.de>  Thu, 18 May 2017 00:33:45 +0200
+
 rtlsdr-ogn (0.2.6~git547e6aa-3) unstable; urgency=medium
 
   * Fix example configuration file (updated patch from PR #26).

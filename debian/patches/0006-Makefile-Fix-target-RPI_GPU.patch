@@ -1,7 +1,6 @@
-From a9ee51404be1547e137b9d0732117a0d71511b18 Mon Sep 17 00:00:00 2001
 From: "Fabian P. Schmidt" <kerel-fs@gmx.de>
 Date: Wed, 15 Mar 2017 09:52:53 +0100
-Subject: [PATCH 6/6] Makefile: Fix target RPI_GPU
+Subject: Makefile: Fix target RPI_GPU
 
 ---
  Makefile | 3 ++-
@@ -22,6 +21,3 @@ index 68608f9..1cbcea5 100644
  endif
  
  #####
--- 
-2.1.4
-
