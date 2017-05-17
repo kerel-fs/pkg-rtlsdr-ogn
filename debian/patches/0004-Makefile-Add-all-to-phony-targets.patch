@@ -7,7 +7,7 @@ Subject: Makefile: Add all to phony targets
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/Makefile b/Makefile
-index 4356e71..68608f9 100644
+index 859ea8f..a9d2e41 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -35,4 +35,4 @@ r2fft_test:	src/r2fft_test.cc src/r2fft.h src/fft.h

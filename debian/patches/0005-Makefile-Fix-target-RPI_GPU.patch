@@ -7,7 +7,7 @@ Subject: Makefile: Fix target RPI_GPU
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/Makefile b/Makefile
-index 68608f9..1cbcea5 100644
+index a9d2e41..0dbf743 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -15,8 +15,9 @@ FLAGS += -mcpu=arm1176jzf-s -mtune=arm1176jzf-s -march=armv6zk -mfpu=vfp

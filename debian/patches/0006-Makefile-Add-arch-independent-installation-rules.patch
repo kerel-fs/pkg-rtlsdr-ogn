@@ -7,12 +7,12 @@ Subject: Makefile: Add arch independent installation rules
  1 file changed, 44 insertions(+), 9 deletions(-)
 
 diff --git a/Makefile b/Makefile
-index 1cbcea5..102fb2a 100644
+index 0dbf743..c07330a 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -3,21 +3,45 @@ VERSION = $(shell cat VERSION.txt)
  FLAGS = -Wall -O3 -ffast-math -DVERSION=$(VERSION)
- LDLIBS  =  -lpthread -lm -ljpeg -lconfig -lrt -lfftw3 -lfftw3f -lrtlsdr
+ LDLIBS  =  -lpthread -lm -ljpeg -lconfig -lrt -lfftw3 -lfftw3f -lrtlsdr -ldl
  
 +prefix = /usr/local
  #####

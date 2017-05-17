@@ -8,10 +8,10 @@ Fixes #11: Version 0.2.5 crashs with SEGV if invoked by systemd.
  1 file changed, 11 insertions(+), 4 deletions(-)
 
 diff --git a/src/ogn-rf.cc b/src/ogn-rf.cc
-index c9baead..5147a09 100644
+index 0c74193..0253b4a 100644
 --- a/src/ogn-rf.cc
 +++ b/src/ogn-rf.cc
-@@ -1055,10 +1055,17 @@ int main(int argc, char *argv[])
+@@ -1185,10 +1185,17 @@ int main(int argc, char *argv[])
    GSM.Start();
    RF.Start();
  

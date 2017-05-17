@@ -9,7 +9,7 @@ Subject: Move version string from Makefile to VERSION.txt
  create mode 100644 VERSION.txt
 
 diff --git a/Makefile b/Makefile
-index 9431e3f..edd29b4 100644
+index 6ca6cb6..1c7b78c 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -1,4 +1,4 @@

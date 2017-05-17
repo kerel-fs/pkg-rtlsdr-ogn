@@ -3,21 +3,21 @@ Date: Thu, 9 Feb 2017 22:23:07 +0100
 Subject: Improve Makefile
 
 ---
- Makefile | 44 +++++++++++++++++++++-----------------------
- 1 file changed, 21 insertions(+), 23 deletions(-)
+ Makefile | 45 +++++++++++++++++++++------------------------
+ 1 file changed, 21 insertions(+), 24 deletions(-)
 
 diff --git a/Makefile b/Makefile
-index edd29b4..4356e71 100644
+index 1c7b78c..859ea8f 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -1,40 +1,38 @@
+@@ -1,41 +1,38 @@
  VERSION = $(shell cat VERSION.txt)
  
 -# USE_RPI_GPU_FFT = 1
 -
  FLAGS = -Wall -O3 -ffast-math -DVERSION=$(VERSION)
 -LIBS  = -lpthread -lm -ljpeg -lconfig -lrt
-+LDLIBS  =  -lpthread -lm -ljpeg -lconfig -lrt -lfftw3 -lfftw3f -lrtlsdr
++LDLIBS  =  -lpthread -lm -ljpeg -lconfig -lrt -lfftw3 -lfftw3f -lrtlsdr -ldl
 +
 +#####
  
@@ -36,7 +36,8 @@ index edd29b4..4356e71 100644
 -
  ifdef USE_RPI_GPU_FFT
  GPU_FLAGS = -DUSE_RPI_GPU_FFT
--GPU_SRC   = mailbox.c gpu_fft.c gpu_fft_twiddles.c gpu_fft_shaders.c
+-GPU_SRC   = mailbox.c gpu_fft_base.c gpu_fft.c gpu_fft_twiddles.c gpu_fft_shaders.c
+-LIBS += -ldl
 +GPU_SRC   = src/mailbox.c src/gpu_fft.c src/gpu_fft_twiddles.c src/gpu_fft_shaders.c
  endif
  
