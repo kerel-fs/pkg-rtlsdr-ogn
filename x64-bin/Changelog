@@ -1,3 +1,6 @@
+0.2.6 (March 2017)
+- To update ...
+
 0.2.5 (August 2016)
 - Add DDB.ReadFile to read database from a file instead of downloading from internet.
 - RF.FreqCorr accepts float.
