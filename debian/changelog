@@ -1,10 +1,10 @@
-rtlsdr-ogn (0.2.6-1) UNRELEASED; urgency=medium
+rtlsdr-ogn (0.2.6-1) unstable; urgency=medium
 
   * Introduced git-quiltimport for patch management.
   * New upstream release.
   * Added missing file gpu_fft_base.c.
 
- -- Fabian P. Schmidt <kerel-fs@gmx.de>  Thu, 18 May 2017 00:33:45 +0200
+ -- Fabian P. Schmidt <kerel-fs@gmx.de>  Thu, 18 May 2017 02:20:45 +0200
 
 rtlsdr-ogn (0.2.6~git547e6aa-3) unstable; urgency=medium
 
