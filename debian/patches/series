@@ -2,10 +2,9 @@
 0002-Move-version-string-from-Makefile-to-VERSION.txt.patch
 0003-Improve-Makefile.patch
 0004-Makefile-Add-all-to-phony-targets.patch
-0005-Makefile-Fix-target-RPI_GPU.patch
-0006-Makefile-Add-arch-independent-installation-rules.patch
-0007-Add-systemd-units-for-ogn-decode-and-ogn-rf.patch
-0008-ogn-decode.service-Set-StandardInput-to-tty.patch
-0009-ogn-rf.service-Execute-ogn-rf-as-root.patch
-0010-Add-rtlsdr-ogn.conf-conffile.patch
-0011-ogn-rf-Detect-if-stdin-is-a-terminal.patch
+0005-Makefile-Add-arch-independent-installation-rules.patch
+0006-Add-systemd-units-for-ogn-decode-and-ogn-rf.patch
+0007-ogn-decode.service-Set-StandardInput-to-tty.patch
+0008-ogn-rf.service-Execute-ogn-rf-as-root.patch
+0009-Add-rtlsdr-ogn.conf-conffile.patch
+0010-ogn-rf-Detect-if-stdin-is-a-terminal.patch

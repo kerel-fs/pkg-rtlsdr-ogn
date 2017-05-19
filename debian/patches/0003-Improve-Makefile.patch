@@ -3,14 +3,14 @@ Date: Thu, 9 Feb 2017 22:23:07 +0100
 Subject: Improve Makefile
 
 ---
- Makefile | 45 +++++++++++++++++++++------------------------
- 1 file changed, 21 insertions(+), 24 deletions(-)
+ Makefile | 46 ++++++++++++++++++++++------------------------
+ 1 file changed, 22 insertions(+), 24 deletions(-)
 
 diff --git a/Makefile b/Makefile
-index 1c7b78c..859ea8f 100644
+index 1c7b78c..3d53c5f 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -1,41 +1,38 @@
+@@ -1,41 +1,39 @@
  VERSION = $(shell cat VERSION.txt)
  
 -# USE_RPI_GPU_FFT = 1
@@ -35,10 +35,11 @@ index 1c7b78c..859ea8f 100644
 -#endif
 -
  ifdef USE_RPI_GPU_FFT
++LDLIBS += -ldl
  GPU_FLAGS = -DUSE_RPI_GPU_FFT
 -GPU_SRC   = mailbox.c gpu_fft_base.c gpu_fft.c gpu_fft_twiddles.c gpu_fft_shaders.c
 -LIBS += -ldl
-+GPU_SRC   = src/mailbox.c src/gpu_fft.c src/gpu_fft_twiddles.c src/gpu_fft_shaders.c
++GPU_SRC   = src/mailbox.c src/gpu_fft.c src/gpu_fft_base.c src/gpu_fft_twiddles.c src/gpu_fft_shaders.c
  endif
  
 -all:    gsm_scan ogn-rf r2fft_test
